@@ -1,0 +1,56 @@
+<!-- Sets up html and body tags-->
+<dc.Html Skeleton="assessment-domka">
+  <dc.body>
+
+    <!-- Sets the main section of the body with a paragraph, image, link and button -->
+    <dc.Main>
+      <dc.Band Pad="Medium" Width="Medium">
+        <dc.FullLayout Pad="Medium" id="homeParagraph">
+          <dc.ImageWidget
+            Path="/img-1"
+            Description="Image of lorem ipsum."
+          ></dc.ImageWidget>
+          <dc.TextWidget id="txtParagraph">
+            <tr Locale="eng">
+              <![CDATA[ ## This is a paragraph. This is a [link.](/link) ]]>
+            </tr>
+          </dc.TextWidget>
+          <dc.Button
+            Label="Check Us Out"
+            To="https://designcraftadvertising.com/"
+          />
+        </dc.FullLayout>
+      </dc.Band>
+    </dc.Main>
+
+    <!-- Sets social media links in the footer of the body-->
+    <dc.footer>
+      <dc.FullLayout Pad="Medium">
+        <dcm.SocialMediaWidget id="socialLinks">
+          <dcm.SocialMediaIcon
+            For="Instagram"
+            IconType="simple"
+            Icon="fab/instagram"
+            IconSize="2x"
+          />
+          <dcm.SocialMediaIcon
+            For="Twitter"
+            IconType="simple"
+            Icon="fab/twitter"
+            IconSize="2x"
+          />
+        </dcm.SocialMediaWidget>
+      </dc.FullLayout>
+    </dc.footer>
+  </dc.body>
+</dc.Html>
+
+<!-- RAW code
+<div>
+    <div id="homeParagraph">
+        <div id="txtParagraph">
+            <img src="/galleries/img-1.v/full.jpg"></img>
+            <p>This is a paragraph. This is a <a href="/link" class="homeLink">link.</a></p>
+        </div>
+    </div>
+</div>  -->
